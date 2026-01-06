@@ -26,6 +26,20 @@ STM32CubeIDE is chosen because:
 - The C language allows full control over memory and buffers
 - No third-party dependencies are required
 
+### 
+Build & Run Instructions
+
+To use the library:
+
+1. Clone or download the repository from GitHub
+2. Open the project in STM32CubeIDE
+3. Include the header file "json_serializer.h" in your application
+4. Call serialize_to_json() with valid input structures
+5. Compile and flash to the STM32 target or test via console logging
+
+The example application in the "examples" folder demonstrates
+the correct sequence for creating input data and generating JSON output.
+
 ## Library API
 
 The library provides one main function:
@@ -79,3 +93,12 @@ is shown in the examples folder.
 - Strict buffer size tracking
 - Fixed predefined format only
 
+## Potential Improvements
+
+Although the current version meets the assignment requirements,
+it can be extended in several ways:
+
+- Streaming support for large datasets
+- Additional media types and units
+- Optimized timestamp handling
+- Integration with communication layers
