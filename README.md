@@ -39,6 +39,14 @@ This API is:
 - Prevents buffer overflows
 - Returns detailed error codes
 
+  Key characteristics of the API:
+
+- Completely transport independent
+- Operates only on internal data models
+- Writes JSON into a caller-provided buffer
+- Performs strict bounds checking
+- Returns clear and simple error codes
+
 ## Data Model Design
 
 Internal data structures are defined in:
